@@ -1,0 +1,12 @@
+{
+  "name": "tarea-1",
+  "version": "1.0.0",
+  "description": "Tarea 1 NodeJS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "saludar":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Aguirre Rojas",
+  "license": "ISC"
+}
