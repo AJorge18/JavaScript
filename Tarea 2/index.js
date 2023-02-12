@@ -3,7 +3,7 @@ const Info = [
       name: "Jorge Aguirre",
       age: 24,
       developer: true,
-      birthday: new Date("1998-12-31"),
+      birthday: new Date("1998-31-12"),
       favoriteBook: {
         title: "Don Quijote de la Mancha",
         author: "Miguel de Cervantes",
