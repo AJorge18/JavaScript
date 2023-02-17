@@ -3,7 +3,7 @@ const alturaEnMetros = 1.70;
 const pesoEnKg = 60.5;
 const alturaRedondeada = Math.ceil(alturaEnMetros);
 const pesoRedondeado = Math.floor(pesoEnKg);
-const maxPlusOne = (Number.MAX_SAFE_INTEGER + 1) === Number.MAX_SAFE_INTEGER;
+const maxPlusOne = Number.MAX_VALUE + 1 === Number.MAX_VALUE
 
 console.log("Altura en centímetros:", alturaEnCm);
 console.log("Altura en metros:", alturaEnMetros);
