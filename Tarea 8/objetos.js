@@ -1,9 +1,9 @@
 // Objeto con mis datos personales
 let misDatos = {
-    nombre: 'Juan',
-    apellido: 'Pérez',
-    edad: 30,
-    altura: 1.8,
+    nombre: 'Jorge',
+    apellido: 'Aguirre',
+    edad: 24,
+    altura: 1.7,
     eresDesarrollador: true
 };
 
