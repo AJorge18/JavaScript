@@ -1,13 +1,11 @@
 class Estudiante {
-    constructor(nombre) {
-        this.nombre = nombre;
-        this.asignaturas = ["Javascript", "HTML", "CSS"];
-    }
+        nombre = nombre;
+        asignaturas = ["Javascript", "HTML", "CSS"];
 
     obtenDatos() {
         return {
-        nombre: this.nombre,
-        asignaturas: this.asignaturas
+            nombre: this.nombre,
+            asignaturas: this.asignaturas
         }
     }
 }
