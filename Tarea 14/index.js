@@ -1,5 +1,5 @@
 class Estudiante {
-        nombre = nombre;
+        nombre = "Jorge";
         asignaturas = ["Javascript", "HTML", "CSS"];
 
     obtenDatos() {
@@ -10,5 +10,5 @@ class Estudiante {
     }
 }
 
-    const nuevoEstudiante = new Estudiante("Jorge");
+    const nuevoEstudiante = new Estudiante();
     console.log(nuevoEstudiante.obtenDatos());
