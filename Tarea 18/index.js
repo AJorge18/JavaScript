@@ -1,20 +1,13 @@
-// Variables
-const firstName = 'Jorge';
-const lastName = 'Aguirre';
+const nombre = "Jorge"
+const apellido = "Aguirre"
 
-// Objectos
-const person = {
-    firstName: firstName,
-    lastName: lastName
-};
+const datos = {
+    nombre,
+    apellido
+}
 
-// Almacena el objeto anterior en la SessionStorage
-sessionStorage.setItem('person', JSON.stringify(person));
+// sessionStorage.setItem("datos", JSON.stringify(datos))
+// localStorage.setItem("datos", JSON.stringify(datos))
 
-// Almacena el objeto anterior en la LocalStorage
-localStorage.setItem('person', JSON.stringify(person));
-
-// Cookie que caduca en 2 minutos
-const cookieValue = JSON.stringify(person);
-document.cookie = `person=${cookieValue};expires=${new Date(Date.now() + 120000).toUTCString()};`;
-
+const now = new Date()
+// document.cookie = `datos=${JSON.stringify(datos)};expires=${new Date(now.getTime() + 2 * 60000)}`
