@@ -1,49 +1,44 @@
-let marker,map;
+let markers, map;
 
-function initMap(){
-    // console.log("Inicializando mapa")
-    const posicion={
-        lat:-25.363,
-        lng:131.044
-    }
+function initMap() {
+    const posicion = {
+        lat: -25.363,
+        lng: 131.044,
+    };
 
-    map=new google.maps.Map(document.getElementById("map"),{
-        zoom:4,
-        center:posicion
+    map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: posicion
+    });
+
+    markers.push(
+        new google.maps.Marker({
+            position: {
+                lat: 43.288773445332524,
+                lng: -2.163845628766325,
+        },
+            map,
+            title: "Zarautz",
+        })
+    );
+markers.push(
+    new google.maps.Marker({
+    position: {
+        lat: 36.164983935422484,
+        lng: -86.78260332112534,
+    },
+    map,
+    title: "Nashville",
     })
-
-    marker=new google.maps.Marker({
-        position:posicion,
-        map,
-        title:"Posicion Inicial"
+);
+markers.push(
+    new google.maps.Marker({
+    position: {
+        lat: 36.242150706885596,
+        lng: -6.0775131009957715,
+      },
+      map,
+      title: "El Palmar",
     })
-    // Obtener la geolocalizacion
-    // marker.setPosition({lat,lng})
-
-    geoPosiciona()
-}
-function geoPosiciona(){
-    if(navigator.geolocation){
-    const geoLoc=navigator.geolocation
-    const options={timeout:60000}
-    const watchPos=geoLoc.watchPosition(centraMapa, onError, options)
-    }else{
-        alert("Tu navegador no admite geolocalización")
-    }
-
-}
-
-function centraMapa(position){
-    const nuevaPos={
-        lat:position.coords.latitude,
-        lng:position.coords.longitude 
-    }
-    console.log(nuevaPos)
-    marker.setPosition(nuevaPos)
-    map.setCenter(nuevaPos)
-}
-
-function onError(error){
-    console.log("Se ha producido un error y lo hemos gestionado")
-    console.error(error)
+  );
 }
